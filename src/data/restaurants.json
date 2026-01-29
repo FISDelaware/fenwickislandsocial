@@ -1,0 +1,310 @@
+[
+  {
+    "name": "Harpoon Hanna’s",
+    "slug": "harpoon-hannas",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "Seafood",
+      "American / Coastal"
+    ],
+    "vibes": [
+      "Waterfront / View",
+      "Casual"
+    ],
+    "goodFor": [
+      "Groups",
+      "Outdoor seating"
+    ],
+    "shortBlurb": "A Fenwick staple with a waterfront deck and an easygoing, vacation-friendly menu.",
+    "longBlurb": "Harpoon Hanna’s is the kind of place you pick as much for the waterfront deck as the food. The menu is broad enough for mixed groups, and it’s a reliable move when you want seafood classics and casual drinks with a view.",
+    "mustTry": [
+      "Seafood platters",
+      "Crab-forward specials"
+    ],
+    "website": "https://harpoonhannasrestaurant.com/",
+    "menuUrl": "https://harpoonhannasrestaurant.com/app/uploads/2025/05/2025-Harpoon-Hannas-Dinner.pdf",
+    "photos": [
+      "/images/restaurants/harpoon-hannas/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Mio Fratello Italian Steakhouse",
+    "slug": "mio-fratello",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "Pizza",
+      "Italian"
+    ],
+    "vibes": [
+      "Casual",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Groups",
+      "Sit-down"
+    ],
+    "shortBlurb": "A sit-down Italian option that works when not everyone wants just pizza.",
+    "longBlurb": "Mio Fratello is a good group-friendly pick because the menu covers pizza, pasta, and steaks without feeling fussy. It’s an easy choice for families or mixed cravings when you want one place that can satisfy everyone.",
+    "mustTry": [
+      "Classic pies",
+      "Pasta favorites"
+    ],
+    "website": "https://www.miofratellos.com/",
+    "menuUrl": "https://static.wixstatic.com/media/a7a6f6_ce4c439dd6514db9afba37b07fae9661~mv2.jpeg/v1/fill/w_1263,h_1952,al_c,q_90,enc_avif,quality_auto/IMG_3590.jpeg",
+    "photos": [
+      "/images/restaurants/mio-fratello/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Jimmy’s Kitchen",
+    "slug": "jimmys-kitchen",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$",
+    "cuisines": [
+      "Breakfast & Brunch"
+    ],
+    "vibes": [
+      "Casual",
+      "Local"
+    ],
+    "goodFor": [
+      "Breakfast",
+      "Quick bite"
+    ],
+    "shortBlurb": "No-frills breakfast with generous portions—popular with locals for a reason.",
+    "longBlurb": "Jimmy’s Kitchen is straightforward, fast, and filling. It’s a great stop before the beach when you want classic breakfast comfort without a long wait or a complicated menu.",
+    "mustTry": [
+      "Breakfast plates",
+      "Coffee + simple classics"
+    ],
+    "website": "https://www.facebook.com/jimmyskitchendelaware/",
+    "menuUrl": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-9/95227960_10158729399454172_6822535990414934016_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HcHsWdrpKdwQ7kNvwG2iijh&_nc_oc=Adke1HZQkMS6rGdjXKWhxjx1WFd__L2K7YwMy-DGrqY2S3vBAVgH7l0OXq5UGUC2h5Q&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&_nc_gid=KcH04MfVFIicgbUhBogDuw&oh=00_AfpthfE4qo9R1MyGV-w972Er292jtFDp1R6P1jZEqaI6TQ&oe=69A32500",
+    "photos": [
+      "/images/restaurants/jimmys-kitchen/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Grotto Pizza",
+    "slug": "grotto-pizza-bethany",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$$",
+    "cuisines": [
+      "Pizza"
+    ],
+    "vibes": [
+      "Casual",
+      "Beachy",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Families",
+      "Groups"
+    ],
+    "shortBlurb": "A Bethany classic known for swirl-style pizza and boardwalk convenience.",
+    "longBlurb": "Grotto Pizza hits the beach-town nostalgia sweet spot. The signature swirl-style pies make it feel like a “you have to do it once” place, and it’s an easy choice if you’re staying near the boardwalk.",
+    "mustTry": [
+      "Classic swirl pie",
+      "Pepperoni"
+    ],
+    "website": "",
+    "menuUrl": "",
+    "photos": [
+      "/images/placeholder.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Bluecoast Seafood Grill",
+    "slug": "bluecoast-seafood-grill",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$$",
+    "cuisines": [
+      "Seafood"
+    ],
+    "vibes": [
+      "Modern",
+      "Date Night"
+    ],
+    "goodFor": [
+      "Sit-down",
+      "Date night"
+    ],
+    "shortBlurb": "A more polished Bethany seafood pick that still feels relaxed, not formal.",
+    "longBlurb": "Bluecoast is a strong “nice dinner” option without being stuffy. It’s a good move when you want fresh seafood and a calmer vibe than the louder beach-bar spots.",
+    "mustTry": [
+      "Fresh fish specials",
+      "Seasonal dishes"
+    ],
+    "website": "",
+    "menuUrl": "",
+    "photos": [
+      "/images/placeholder.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Bethany Blues BBQ",
+    "slug": "bethany-blues-bbq",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$$",
+    "cuisines": [
+      "BBQ",
+      "American / Coastal"
+    ],
+    "vibes": [
+      "Casual",
+      "Lively"
+    ],
+    "goodFor": [
+      "Groups",
+      "Laid-back"
+    ],
+    "shortBlurb": "Smoked meats, big portions, and a lively atmosphere—great for a hearty night out.",
+    "longBlurb": "Bethany Blues is the type of place you go when you want something filling and unfussy. It’s group-friendly, energetic, and a reliable pick when you’re in the mood for BBQ and a casual night.",
+    "mustTry": [
+      "Smoked meats",
+      "Shareable platters"
+    ],
+    "website": "",
+    "menuUrl": "",
+    "photos": [
+      "/images/placeholder.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Dough Roller",
+    "slug": "dough-roller",
+    "areaKey": "ocean-city",
+    "address": "Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "Pizza",
+      "American / Coastal"
+    ],
+    "vibes": [
+      "Casual",
+      "Fast-Paced"
+    ],
+    "goodFor": [
+      "Groups",
+      "Quick dinner"
+    ],
+    "shortBlurb": "An OC staple for thick-crust pizza and efficient service—ideal after the beach.",
+    "longBlurb": "Dough Roller is popular for a reason: it’s fast, reliable, and built for groups. If you want a satisfying, no-drama dinner in Ocean City, this is an easy default.",
+    "mustTry": [
+      "Thick-crust pizza",
+      "Classic beach-town comfort"
+    ],
+    "website": "",
+    "menuUrl": "",
+    "photos": [
+      "/images/placeholder.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Fish Tales",
+    "slug": "fish-tales",
+    "areaKey": "ocean-city",
+    "address": "Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "Seafood",
+      "American / Coastal"
+    ],
+    "vibes": [
+      "Waterfront / View",
+      "Lively"
+    ],
+    "goodFor": [
+      "Outdoor seating",
+      "Groups"
+    ],
+    "shortBlurb": "Bayside, lively, and built for summer—go for the docks and the atmosphere.",
+    "longBlurb": "Fish Tales is a vacation-energy waterfront spot with outdoor seating and docks right there. The menu leans casual seafood, but the setting is the main reason people keep coming back.",
+    "mustTry": [
+      "Seafood classics",
+      "Dockside drinks"
+    ],
+    "website": "",
+    "menuUrl": "",
+    "photos": [
+      "/images/placeholder.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "The Hobbit Restaurant",
+    "slug": "the-hobbit-restaurant",
+    "areaKey": "ocean-city",
+    "address": "Ocean City, MD",
+    "price": "$$$",
+    "cuisines": [
+      "American / Coastal"
+    ],
+    "vibes": [
+      "Upscale",
+      "Date Night",
+      "Quiet"
+    ],
+    "goodFor": [
+      "Special occasions",
+      "Date night"
+    ],
+    "shortBlurb": "One of OC’s more refined dining options—quiet, intimate, and special-occasion worthy.",
+    "longBlurb": "The Hobbit is best saved for nights when you want a slower pace and a more elevated experience. It’s not a quick beach meal—this is a sit-down, make-an-evening-of-it spot.",
+    "mustTry": [
+      "Chef-driven courses",
+      "Special-occasion dishes"
+    ],
+    "website": "",
+    "menuUrl": "",
+    "photos": [
+      "/images/placeholder.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Dumser’s Dairyland",
+    "slug": "dumsers-dairyland",
+    "areaKey": "ocean-city",
+    "address": "Ocean City, MD",
+    "price": "$",
+    "cuisines": [
+      "Desserts & Ice Cream"
+    ],
+    "vibes": [
+      "Classic",
+      "Casual",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Families",
+      "Dessert stop"
+    ],
+    "shortBlurb": "An OC institution for ice cream and milkshakes—simple, nostalgic, and always hits.",
+    "longBlurb": "Dumser’s is a boardwalk-area classic for a reason. It’s the perfect post-dinner stop when you want an easy treat and a little Ocean City nostalgia.",
+    "mustTry": [
+      "Milkshakes",
+      "Classic ice cream"
+    ],
+    "website": "",
+    "menuUrl": "",
+    "photos": [
+      "/images/placeholder.jpg"
+    ],
+    "featured": true
+  }
+]

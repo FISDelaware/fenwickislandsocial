@@ -1,0 +1,11 @@
+[
+  { "key": "pizza", "name": "Pizza", "emoji": "🍕" },
+  { "key": "seafood", "name": "Seafood", "emoji": "🦀" },
+  { "key": "mexican", "name": "Mexican", "emoji": "🌮" },
+  { "key": "breakfast-brunch", "name": "Breakfast & Brunch", "emoji": "🍳" },
+  { "key": "sushi-asian", "name": "Sushi & Asian", "emoji": "🍣" },
+  { "key": "burgers", "name": "Burgers", "emoji": "🍔" },
+  { "key": "desserts", "name": "Desserts", "emoji": "🍦" },
+  { "key": "american-coastal", "name": "American / Coastal", "emoji": "🌊" }
+]
+

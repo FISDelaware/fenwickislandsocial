@@ -1,0 +1,14 @@
+---
+import collections from "../data/collections.json";
+---
+<div class="cols3">
+  {collections.map((c) => (
+    <a class="card" href={`/restaurants?collection=${c.key}`} style="padding:16px;">
+      <div class="kicker">Editor Pick</div>
+      <div class="h2" style="margin-top:6px; margin-bottom:6px;">{c.title}</div>
+      <p class="small" style="line-height:1.45;">{c.subtitle}</p>
+      <div style="margin-top:10px; font-weight:700; color:var(--accent);">Explore →</div>
+    </a>
+  ))}
+</div>
+

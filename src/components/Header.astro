@@ -1,0 +1,26 @@
+---
+const nav = [
+  { href: "/food/pizza", label: "Food" },
+  { href: "/areas/fenwick-island", label: "Areas" },
+  { href: "/restaurants", label: "Restaurants" },
+  { href: "/about", label: "About" }
+];
+---
+<header class="container" style="padding:18px 18px 10px;">
+  <div style="display:flex; align-items:center; justify-content:space-between; gap:14px;">
+    <a href="/" style="display:flex; align-items:baseline; gap:10px;">
+      <div style="font-family: ui-serif, Georgia, serif; font-weight:800; font-size:1.15rem; color:var(--navy);">
+        Fenwick Island Social
+      </div>
+    </a>
+
+    <nav style="display:flex; gap:14px; flex-wrap:wrap;">
+      {nav.map((n) => (
+        <a href={n.href} class="small" style="padding:8px 10px; border-radius:999px; border:1px solid var(--border); background:rgba(255,255,255,.65);">
+          {n.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
+

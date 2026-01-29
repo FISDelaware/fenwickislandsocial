@@ -1,0 +1,50 @@
+---
+import Base from "../../layouts/Base.astro";
+import RestaurantCard from "../../components/RestaurantCard.astro";
+
+import cuisines from "../../data/cuisines.json";
+import areas from "../../data/areas.json";
+import restaurants from "../../data/restaurants.json";
+
+export async function getStaticPaths() {
+  return cuisines.map((c) => ({
+    params: { cuisine: c.key }
+  }));
+}
+
+const { cuisine } = Astro.params;
+const c = cuisines.find((x) => x.key === cuisine);
+
+if (!c) {
+  return Astro.redirect("/restaurants");
+}
+
+const areaName = (key) => areas.find((a) => a.key === key)?.name ?? key;
+
+const title = `${c.name} near Fenwick, Bethany & Ocean City`;
+const intro = `Curated ${c.name.toLowerCase()} picks across Fenwick Island, Bethany Beach, and Ocean City. No reviews—just solid choices when you know what you’re craving.`;
+
+const results = restaurants.filter((r) =>
+  (r.cuisines || []).some((x) => x.toLowerCase() === c.name.toLowerCase())
+);
+---
+<Base title={`Fenwick Island Social — ${title}`}>
+  <section class="section">
+    <div class="kicker">Food</div>
+    <h1 class="h1">{title}</h1>
+    <p class="p">{intro}</p>
+  </section>
+
+  <section class="section">
+    <div class="rgrid">
+      {results.map((r) => <RestaurantCard r={r} areaName={areaName(r.areaKey)} />)}
+    </div>
+
+    {results.length === 0 && (
+      <div class="card" style="padding:16px; margin-top:14px;">
+        <div class="h2">No picks yet</div>
+        <p class="small">We’ll add more {c.name.toLowerCase()} spots soon.</p>
+      </div>
+    )}
+  </section>
+</Base>

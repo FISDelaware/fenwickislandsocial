@@ -1,0 +1,42 @@
+---
+import Base from "../../layouts/Base.astro";
+import RestaurantCard from "../../components/RestaurantCard.astro";
+
+import areas from "../../data/areas.json";
+import restaurants from "../../data/restaurants.json";
+
+export async function getStaticPaths() {
+  return areas.map((a) => ({
+    params: { area: a.key }
+  }));
+}
+
+const { area } = Astro.params;
+const a = areas.find((x) => x.key === area);
+
+if (!a) {
+  return Astro.redirect("/restaurants");
+}
+
+const results = restaurants.filter((r) => r.areaKey === a.key);
+---
+<Base title={`Fenwick Island Social — ${a.name}`}>
+  <section class="section">
+    <div class="kicker">Area</div>
+    <h1 class="h1">{a.name}</h1>
+    <p class="p">Curated restaurant picks in {a.name}. Use these as reliable go-to choices when you want a good meal without overthinking it.</p>
+  </section>
+
+  <section class="section">
+    <div class="rgrid">
+      {results.map((r) => <RestaurantCard r={r} areaName={a.name} />)}
+    </div>
+
+    {results.length === 0 && (
+      <div class="card" style="padding:16px; margin-top:14px;">
+        <div class="h2">No picks yet</div>
+        <p class="small">We’ll add more restaurants in this area soon.</p>
+      </div>
+    )}
+  </section>
+</Base>

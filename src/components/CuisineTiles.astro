@@ -1,0 +1,15 @@
+---
+import cuisines from "../data/cuisines.json";
+---
+<div class="tiles">
+  {cuisines.map((c) => (
+    <a class="tile" href={`/food/${c.key}`}>
+      <div style="display:flex; gap:10px; align-items:center;">
+        <div style="font-size:1.2rem;">{c.emoji}</div>
+        <div>{c.name}</div>
+      </div>
+      <span>Browse</span>
+    </a>
+  ))}
+</div>
+

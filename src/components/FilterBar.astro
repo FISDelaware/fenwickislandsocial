@@ -1,0 +1,29 @@
+---
+import areas from "../data/areas.json";
+const { area = "", price = "" } = Astro.props;
+---
+<form method="get" style="display:flex; gap:10px; flex-wrap:wrap; align-items:end;">
+  <div>
+    <div class="small" style="margin-bottom:6px;">Area</div>
+    <select name="area" class="btn" style="padding:10px 12px;">
+      <option value="">All</option>
+      {areas.map((a) => (
+        <option value={a.key} selected={a.key === area}>{a.name}</option>
+      ))}
+    </select>
+  </div>
+
+  <div>
+    <div class="small" style="margin-bottom:6px;">Price</div>
+    <select name="price" class="btn" style="padding:10px 12px;">
+      <option value="">All</option>
+      {["$","$$","$$$"].map((p) => (
+        <option value={p} selected={p === price}>{p}</option>
+      ))}
+    </select>
+  </div>
+
+  <button class="btn primary" type="submit">Filter</button>
+  <a class="btn" href="/restaurants">Reset</a>
+</form>
+

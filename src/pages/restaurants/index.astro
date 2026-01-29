@@ -1,0 +1,61 @@
+---
+import Base from "../../layouts/Base.astro";
+import RestaurantCard from "../../components/RestaurantCard.astro";
+import FilterBar from "../../components/FilterBar.astro";
+
+import areas from "../../data/areas.json";
+import restaurants from "../../data/restaurants.json";
+import collections from "../../data/collections.json";
+
+const url = new URL(Astro.request.url);
+const area = url.searchParams.get("area") ?? "";
+const price = url.searchParams.get("price") ?? "";
+const collectionKey = url.searchParams.get("collection") ?? "";
+
+const areaName = (key) => areas.find(a => a.key === key)?.name ?? key;
+
+const getCollection = (key) => collections.find(c => c.key === key);
+
+const applyCollection = (list) => {
+  if (!collectionKey) return list;
+  const col = getCollection(collectionKey);
+  if (!col) return list;
+
+  const f = col.filters || {};
+  return list.filter(r => {
+    const byCuisine = f.cuisine ? (r.cuisines || []).some(x => x.toLowerCase().includes(f.cuisine.replace("-", " "))) : true;
+    const byVibe = f.vibe ? (r.vibes || []).includes(f.vibe) : true;
+    return byCuisine && byVibe;
+  });
+};
+
+let results = restaurants.slice();
+results = applyCollection(results);
+if (area) results = results.filter(r => r.areaKey === area);
+if (price) results = results.filter(r => r.price === price);
+
+const title = collectionKey ? `Restaurants — ${getCollection(collectionKey)?.title ?? "Collection"}` : "Restaurants";
+const subtitle = collectionKey ? (getCollection(collectionKey)?.subtitle ?? "") : "Browse curated picks across Fenwick, Bethany, and Ocean City.";
+---
+<Base title={`Fenwick Island Social — ${title}`}>
+  <section class="section">
+    <div class="kicker">{collectionKey ? "Editor Pick" : "Curated Directory"}</div>
+    <h1 class="h1" style="margin-bottom:10px;">{title}</h1>
+    <p class="p">{subtitle}</p>
+    <div style="height:16px;"></div>
+    <FilterBar area={area} price={price} />
+  </section>
+
+  <section class="section">
+    <div class="rgrid">
+      {results.map((r) => <RestaurantCard r={r} areaName={areaName(r.areaKey)} />)}
+    </div>
+    {results.length === 0 && (
+      <div class="card" style="padding:16px;">
+        <div class="h2">No matches</div>
+        <p class="small">Try resetting filters or selecting a different area.</p>
+      </div>
+    )}
+  </section>
+</Base>
+

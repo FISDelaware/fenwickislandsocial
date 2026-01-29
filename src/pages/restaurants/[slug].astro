@@ -1,0 +1,114 @@
+---
+import Base from "../../layouts/Base.astro";
+import TagPills from "../../components/TagPills.astro";
+
+import areas from "../../data/areas.json";
+import restaurants from "../../data/restaurants.json";
+
+export async function getStaticPaths() {
+  return restaurants.map((r) => ({
+    params: { slug: r.slug }
+  }));
+}
+
+const { slug } = Astro.params;
+const r = restaurants.find((x) => x.slug === slug);
+
+if (!r) {
+  return Astro.redirect("/restaurants");
+}
+
+const areaName = areas.find((a) => a.key === r.areaKey)?.name ?? r.areaKey;
+
+const photo =
+  r.photos && r.photos.length > 0 ? r.photos[0] : "/images/placeholder.jpg";
+
+const tags = [...(r.cuisines || []), ...(r.vibes || [])].slice(0, 6);
+---
+<Base title={`Fenwick Island Social — ${r.name}`}>
+  <section class="section">
+    <article class="card">
+      <img
+        src={photo}
+        alt={`${r.name} hero image`}
+        style="height:320px; width:100%; object-fit:cover;"
+      />
+
+      <div style="padding:18px;">
+        <div class="kicker">{areaName}</div>
+
+        <h1 class="h1" style="margin-top:8px; margin-bottom:8px;">
+          {r.name}
+        </h1>
+
+        <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+          <span class="pill" style="border-style:dashed;">{r.price}</span>
+          <TagPills tags={tags} />
+        </div>
+
+        <div style="height:16px;"></div>
+
+        <div class="grid2">
+          <div>
+            <h2 class="h2">Why go</h2>
+            <p class="p">{r.longBlurb}</p>
+
+            <div style="height:20px;"></div>
+
+            <h2 class="h2">Good to know</h2>
+            <div class="pills">
+              {(r.goodFor || []).map((g) => <span class="pill">{g}</span>)}
+            </div>
+
+            {r.mustTry && r.mustTry.length > 0 && (
+              <>
+                <div style="height:20px;"></div>
+                <h2 class="h2">Must-try</h2>
+                <ul class="small" style="margin:0; padding-left:18px; line-height:1.6;">
+                  {r.mustTry.map((m) => <li>{m}</li>)}
+                </ul>
+              </>
+            )}
+          </div>
+
+          <div>
+            <div class="card" style="padding:16px; box-shadow:none;">
+              <div class="kicker">Quick links</div>
+
+              <div style="height:10px;"></div>
+              <div class="small"><strong>Address:</strong> {r.address}</div>
+
+              <div style="height:14px;"></div>
+
+              <div class="btnRow">
+                {r.menuUrl ? (
+                  <a class="btn primary" href={r.menuUrl} target="_blank" rel="noreferrer">View menu</a>
+                ) : (
+                  <span class="btn" aria-disabled="true">Menu (add link)</span>
+                )}
+
+                {r.website ? (
+                  <a class="btn" href={r.website} target="_blank" rel="noreferrer">Website</a>
+                ) : (
+                  <span class="btn" aria-disabled="true">Website (add link)</span>
+                )}
+              </div>
+
+              <div style="height:12px;"></div>
+
+              <a
+                class="small"
+                style="font-weight:700; color:var(--accent);"
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.address)}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Directions →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</Base>

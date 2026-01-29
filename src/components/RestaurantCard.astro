@@ -1,0 +1,26 @@
+---
+import TagPills from "./TagPills.astro";
+const { r, areaName } = Astro.props;
+const photo = (r.photos && r.photos[0]) ? r.photos[0] : "/images/placeholder.jpg";
+const tags = [...(r.cuisines || []).slice(0,2), ...(r.vibes || []).slice(0,1)];
+---
+<article class="card">
+  <a href={`/restaurants/${r.slug}`}>
+    <img src={photo} alt={`${r.name} photo`} style="height:190px; width:100%; object-fit:cover;" loading="lazy" />
+    <div style="padding:14px 14px 16px;">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:10px;">
+        <div>
+          <div style="font-weight:800; color:var(--navy);">{r.name}</div>
+          <div class="small">{areaName}</div>
+        </div>
+        <div class="pill" style="border-style:dashed;">{r.price}</div>
+      </div>
+
+      <TagPills tags={tags} />
+      <p class="small" style="margin-top:10px; line-height:1.45;">{r.shortBlurb}</p>
+
+      <div style="margin-top:10px; font-weight:700; color:var(--accent);">View details →</div>
+    </div>
+  </a>
+</article>
+

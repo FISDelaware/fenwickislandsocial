@@ -1,0 +1,27 @@
+[
+  {
+    "key": "best-pizza-near-the-beach",
+    "title": "Best Pizza Near the Beach",
+    "subtitle": "Reliable pies and slices for beach days, late nights, and easy dinners.",
+    "filters": { "cuisine": "pizza" }
+  },
+  {
+    "key": "seafood-with-a-view",
+    "title": "Seafood with a View",
+    "subtitle": "Waterfront settings where the atmosphere matters as much as the menu.",
+    "filters": { "vibe": "Waterfront / View" }
+  },
+  {
+    "key": "family-friendly-favorites",
+    "title": "Family-Friendly Favorites",
+    "subtitle": "Easygoing spots that work for kids, groups, and casual nights out.",
+    "filters": { "vibe": "Family-Friendly" }
+  },
+  {
+    "key": "easy-date-night-spots",
+    "title": "Easy Date-Night Spots",
+    "subtitle": "A little quieter, a little nicer—worth sitting down for.",
+    "filters": { "vibe": "Date Night" }
+  }
+]
+
