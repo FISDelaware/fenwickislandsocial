@@ -1,50 +1,75 @@
 ---
 import Base from "../../layouts/Base.astro";
+import cuisines from "../../data/cuisines.json";
+import restaurants from "../../data/restaurants.json";
 import RestaurantCard from "../../components/RestaurantCard.astro";
 
-import cuisines from "../../data/cuisines.json";
-import areas from "../../data/areas.json";
-import restaurants from "../../data/restaurants.json";
-
-export async function getStaticPaths() {
+export function getStaticPaths() {
   return cuisines.map((c) => ({
-    params: { cuisine: c.key }
+    params: { cuisine: c.key },
   }));
 }
 
 const { cuisine } = Astro.params;
-const c = cuisines.find((x) => x.key === cuisine);
 
-if (!c) {
-  return Astro.redirect("/restaurants");
+// cuisines.json is like: [{ key, name, emoji }]
+const cuisineObj =
+  cuisines.find((c) => c.key === cuisine) ||
+  cuisines.find((c) => String(c.name).toLowerCase() === String(cuisine).toLowerCase());
+
+const targetKey = cuisineObj?.key ?? cuisine ?? "";
+const targetName = cuisineObj?.name ?? cuisine ?? "";
+const emoji = cuisineObj?.emoji ?? "🍽️";
+
+function norm(v) {
+  return String(v ?? "").trim().toLowerCase();
 }
 
-const areaName = (key) => areas.find((a) => a.key === key)?.name ?? key;
+function hasCuisine(r) {
+  const list = Array.isArray(r?.cuisines) ? r.cuisines : [];
+  const keyN = norm(targetKey);
+  const nameN = norm(targetName);
 
-const title = `${c.name} near Fenwick, Bethany & Ocean City`;
-const intro = `Curated ${c.name.toLowerCase()} picks across Fenwick Island, Bethany Beach, and Ocean City. No reviews—just solid choices when you know what you’re craving.`;
+  return list.some((c) => {
+    const cN = norm(c);
+    return cN === keyN || cN === nameN;
+  });
+}
 
-const results = restaurants.filter((r) =>
-  (r.cuisines || []).some((x) => x.toLowerCase() === c.name.toLowerCase())
-);
+const picks = (Array.isArray(restaurants) ? restaurants : []).filter(hasCuisine);
 ---
-<Base title={`Fenwick Island Social — ${title}`}>
+<Base
+  title={`${emoji} ${targetName} — Fenwick Island Social`}
+  description={`Curated ${targetName} picks around Fenwick Island, Bethany Beach, and Ocean City.`}
+>
   <section class="section">
     <div class="kicker">Food</div>
-    <h1 class="h1">{title}</h1>
-    <p class="p">{intro}</p>
-  </section>
+    <h1 class="h1">{emoji} {targetName}</h1>
 
-  <section class="section">
-    <div class="rgrid">
-      {results.map((r) => <RestaurantCard r={r} areaName={areaName(r.areaKey)} />)}
-    </div>
-
-    {results.length === 0 && (
-      <div class="card" style="padding:16px; margin-top:14px;">
-        <div class="h2">No picks yet</div>
-        <p class="small">We’ll add more {c.name.toLowerCase()} spots soon.</p>
+    {picks.length ? (
+      <div class="grid">
+        {picks.map((r) => (
+          <RestaurantCard restaurant={r} />
+        ))}
+      </div>
+    ) : (
+      <div class="card" style="padding:16px; margin-top:12px;">
+        <div class="h2" style="margin:0 0 6px 0;">No picks yet</div>
+        <p class="p" style="margin:0; opacity:.9;">
+          We’ll add more {targetName.toLowerCase()} spots soon.
+        </p>
       </div>
     )}
   </section>
+
+  <style>
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    @media (max-width: 900px){ .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 560px){ .grid{ grid-template-columns: 1fr; } }
+  </style>
 </Base>

@@ -3,28 +3,30 @@
     "name": "Harpoon Hanna’s",
     "slug": "harpoon-hannas",
     "areaKey": "fenwick-island",
-    "address": "Fenwick Island, DE",
+    "address": "39064 Harpoon Rd, Fenwick Island, DE",
     "price": "$$",
     "cuisines": [
+      "seafood",
       "Seafood",
-      "American / Coastal"
+      "coastal",
+      "Coastal"
     ],
     "vibes": [
       "Waterfront / View",
-      "Casual"
+      "Sit-Down"
     ],
     "goodFor": [
       "Groups",
-      "Outdoor seating"
+      "Raw Bar"
     ],
-    "shortBlurb": "A Fenwick staple with a waterfront deck and an easygoing, vacation-friendly menu.",
-    "longBlurb": "Harpoon Hanna’s is the kind of place you pick as much for the waterfront deck as the food. The menu is broad enough for mixed groups, and it’s a reliable move when you want seafood classics and casual drinks with a view.",
+    "shortBlurb": "Iconic Fenwick waterfront spot for seafood, raw bar favorites, and bayside views.",
+    "longBlurb": "Harpoon Hanna’s is a must-stop for visitors—fresh seafood, a raw bar, and that classic Fenwick bayside atmosphere that feels like vacation.",
     "mustTry": [
-      "Seafood platters",
-      "Crab-forward specials"
+      "Raw bar",
+      "Seafood platters"
     ],
-    "website": "https://harpoonhannasrestaurant.com/",
-    "menuUrl": "https://harpoonhannasrestaurant.com/app/uploads/2025/05/2025-Harpoon-Hannas-Dinner.pdf",
+    "website": "https://www.harpoonhannas.com",
+    "menuUrl": "https://www.harpoonhannas.com/menu",
     "photos": [
       "/images/restaurants/harpoon-hannas/1.jpg"
     ],
@@ -127,30 +129,33 @@
     "slug": "bluecoast-seafood-grill",
     "areaKey": "bethany-beach",
     "address": "Bethany Beach, DE",
-    "price": "$$",
+    "price": "$$$",
     "cuisines": [
-      "Seafood"
+      "seafood",
+      "Seafood",
+      "coastal",
+      "Coastal"
     ],
     "vibes": [
-      "Modern",
-      "Date Night"
+      "Upscale Casual",
+      "Sit-Down"
     ],
     "goodFor": [
-      "Sit-down",
-      "Date night"
+      "Cocktails",
+      "Dinner Spot"
     ],
-    "shortBlurb": "A more polished Bethany seafood pick that still feels relaxed, not formal.",
-    "longBlurb": "Bluecoast is a strong “nice dinner” option without being stuffy. It’s a good move when you want fresh seafood and a calmer vibe than the louder beach-bar spots.",
+    "shortBlurb": "Polished but approachable seafood grill with creative plates and a strong cocktail program.",
+    "longBlurb": "Bluecoast is a great Bethany dinner choice when you want fresh fish and creative plates without it feeling too formal.",
     "mustTry": [
-      "Fresh fish specials",
-      "Seasonal dishes"
+      "Fresh fish plates",
+      "Cocktails"
     ],
-    "website": "",
-    "menuUrl": "",
+    "website": "https://www.bluecoastseafoodgrill.com",
+    "menuUrl": "https://www.bluecoastseafoodgrill.com/menu",
     "photos": [
-      "/images/placeholder.jpg"
+      "/images/restaurants/bluecoast-seafood-grill/1.jpg"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "name": "Bethany Blues BBQ",
@@ -158,10 +163,7 @@
     "areaKey": "bethany-beach",
     "address": "Bethany Beach, DE",
     "price": "$$",
-    "cuisines": [
-      "BBQ",
-      "American / Coastal"
-    ],
+    "cuisines": [],
     "vibes": [
       "Casual",
       "Lively"
@@ -190,8 +192,7 @@
     "address": "Ocean City, MD",
     "price": "$$",
     "cuisines": [
-      "Pizza",
-      "American / Coastal"
+      "Pizza"
     ],
     "vibes": [
       "Casual",
@@ -221,8 +222,7 @@
     "address": "Ocean City, MD",
     "price": "$$",
     "cuisines": [
-      "Seafood",
-      "American / Coastal"
+      "Seafood"
     ],
     "vibes": [
       "Waterfront / View",
@@ -251,9 +251,7 @@
     "areaKey": "ocean-city",
     "address": "Ocean City, MD",
     "price": "$$$",
-    "cuisines": [
-      "American / Coastal"
-    ],
+    "cuisines": [],
     "vibes": [
       "Upscale",
       "Date Night",
@@ -279,32 +277,1695 @@
   {
     "name": "Dumser’s Dairyland",
     "slug": "dumsers-dairyland",
-    "areaKey": "ocean-city",
-    "address": "Ocean City, MD",
+    "areaKey": "north-ocean-city",
+    "address": "North Ocean City, MD",
     "price": "$",
     "cuisines": [
-      "Desserts & Ice Cream"
+      "desserts",
+      "Desserts"
     ],
     "vibes": [
-      "Classic",
+      "Iconic Local Spot",
+      "Seasonal Favorite"
+    ],
+    "goodFor": [
+      "Milkshakes",
+      "Ice cream stop"
+    ],
+    "shortBlurb": "Legendary OC ice cream stand for thick milkshakes, hand-dipped cones, and huge portions.",
+    "longBlurb": "Worth the short drive when you want a classic Ocean City dessert stop—big portions, thick shakes, and nostalgic summer vibes.",
+    "mustTry": [
+      "Milkshakes",
+      "Hand-dipped cones"
+    ],
+    "website": "https://www.dumsersdairyland.com",
+    "menuUrl": "https://www.dumsersdairyland.com/menu",
+    "photos": [
+      "/images/restaurants/dumsers-dairyland/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Annabelle’s BBQ & Burgers",
+    "slug": "annabelles-bbq-and-burgers",
+    "areaKey": "fenwick-island",
+    "address": "37314 Coastal Hwy, Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "BBQ",
+      "Burgers",
+      "bbq",
+      "burgers"
+    ],
+    "vibes": [
+      "Casual",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Takeout",
+      "Families"
+    ],
+    "shortBlurb": "A laid-back Fenwick spot serving juicy burgers alongside BBQ favorites.",
+    "longBlurb": "Annabelle’s is a reliable casual stop for burgers and BBQ classics. Great for takeout, easy dinners, and satisfying comfort food close to the beach.",
+    "mustTry": [
+      "Burgers",
+      "BBQ platters",
+      "Pulled pork"
+    ],
+    "website": "https://www.annabellesbbq.com",
+    "menuUrl": "https://www.annabellesbbq.com/menu",
+    "photos": [
+      "/images/restaurants/annabelles-bbq-and-burgers/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Backyard BBQ & Grill",
+    "slug": "backyard-bbq-and-grill",
+    "areaKey": "north-ocean-city",
+    "address": "126th St & Coastal Hwy, Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "BBQ",
+      "bbq"
+    ],
+    "vibes": [
+      "Casual",
+      "Sit-Down"
+    ],
+    "goodFor": [
+      "Groups",
+      "Big portions"
+    ],
+    "shortBlurb": "A North OC go-to for serious BBQ cravings—ribs, pulled pork, brisket, and big, hearty platters.",
+    "longBlurb": "Backyard BBQ is a crowd-pleaser when you want classic smoked meats and you’re hungry-hungry. It’s a solid pick for groups, and the menu hits the usual BBQ heavyweights—ribs, pork, brisket—served in the kind of portions you plan your day around.",
+    "mustTry": [
+      "Ribs",
+      "Pulled pork",
+      "Brisket",
+      "Combo platters"
+    ],
+    "website": "https://www.backyardbbqoc.com",
+    "menuUrl": "https://www.backyardbbqoc.com/menu",
+    "photos": [
+      "/images/restaurants/backyard-bbq-and-grill/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Blue Water Grill",
+    "slug": "blue-water-grill",
+    "areaKey": "ocean-city",
+    "address": "Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "American",
+      "BBQ",
+      "Seafood",
+      "bbq"
+    ],
+    "vibes": [
+      "Waterfront / View",
+      "Casual"
+    ],
+    "goodFor": [
+      "Groups",
+      "Mixed diets"
+    ],
+    "shortBlurb": "Not strictly BBQ, but a good mixed-menu waterfront option with BBQ-leaning dishes alongside seafood and classics.",
+    "longBlurb": "Blue Water Grill is a practical move when your group can’t agree—someone wants seafood, someone wants comfort food, and you want a view. It’s not a pure BBQ joint, but it’s a useful “everyone wins” option with BBQ-inspired choices in the mix.",
+    "mustTry": [
+      "BBQ-style entrée options",
+      "Seafood favorites",
+      "Something shareable for the table"
+    ],
+    "website": "https://www.bluewatergrilloc.com",
+    "menuUrl": "https://www.bluewatergrilloc.com/menu",
+    "photos": [
+      "/images/restaurants/blue-water-grill/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Bad Monkey",
+    "slug": "bad-monkey",
+    "areaKey": "north-ocean-city",
+    "address": "37206 Coastal Hwy, Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "Breakfast & Brunch",
+      "Burgers",
+      "breakfast-brunch",
+      "burgers"
+    ],
+    "vibes": [
+      "Waterfront / View",
+      "Lively",
+      "Casual"
+    ],
+    "goodFor": [
+      "Groups",
+      "Cocktails"
+    ],
+    "shortBlurb": "A lively bayside hangout for burgers, drinks, and waterfront vibes.",
+    "longBlurb": "Bad Monkey is a go-to when you want a fun atmosphere, solid burgers, and drinks by the water. Great for groups and the kind of place where a quick bite can turn into a longer hang.",
+    "mustTry": [
+      "Burgers",
+      "Cocktails"
+    ],
+    "website": "https://www.badmonkeybar.com",
+    "menuUrl": "https://www.badmonkeybar.com/menu",
+    "photos": [
+      "/images/restaurants/bad-monkey/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "The Bayside Skillet",
+    "slug": "the-bayside-skillet",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "Breakfast & Brunch",
+      "breakfast-brunch"
+    ],
+    "vibes": [
+      "Iconic",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Families",
+      "Classic breakfast"
+    ],
+    "shortBlurb": "A legendary Fenwick Island breakfast and brunch institution.",
+    "longBlurb": "The Bayside Skillet is a must-do morning stop, famous for omelets, crepes, and fresh-squeezed juices. It’s popular for a reason—arrive early or be ready to wait.",
+    "mustTry": [
+      "Omelets",
+      "Crepes",
+      "Fresh-squeezed juices"
+    ],
+    "website": "https://www.baysideskillet.com",
+    "menuUrl": "https://www.baysideskillet.com/menu",
+    "photos": [
+      "/images/restaurants/the-bayside-skillet/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Barn 34",
+    "slug": "barn-34",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$$",
+    "cuisines": [
+      "Breakfast & Brunch",
+      "breakfast-brunch"
+    ],
+    "vibes": [
+      "Modern Café",
+      "Casual"
+    ],
+    "goodFor": [
+      "Friends",
+      "Coffee & cocktails"
+    ],
+    "shortBlurb": "A modern Bethany brunch favorite with creative takes on breakfast classics.",
+    "longBlurb": "Barn 34 offers a polished but relaxed brunch experience with quality coffee, cocktails, and inventive dishes. A great choice for brunch with friends.",
+    "mustTry": [
+      "Brunch plates",
+      "Coffee drinks",
+      "Cocktails"
+    ],
+    "website": "https://www.barn34.com",
+    "menuUrl": "https://www.barn34.com/menu",
+    "photos": [
+      "/images/restaurants/barn-34/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "The Breakfast House",
+    "slug": "the-breakfast-house",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$",
+    "cuisines": [
+      "Breakfast",
+      "breakfast-brunch"
+    ],
+    "vibes": [
       "Casual",
       "Family-Friendly"
     ],
     "goodFor": [
       "Families",
-      "Dessert stop"
+      "Classic breakfast"
     ],
-    "shortBlurb": "An OC institution for ice cream and milkshakes—simple, nostalgic, and always hits.",
-    "longBlurb": "Dumser’s is a boardwalk-area classic for a reason. It’s the perfect post-dinner stop when you want an easy treat and a little Ocean City nostalgia.",
+    "shortBlurb": "A Bethany Beach staple for classic breakfast plates and friendly service.",
+    "longBlurb": "The Breakfast House is known for consistency, generous portions, and a welcoming vibe. Popular with both locals and visitors, especially in the mornings.",
     "mustTry": [
-      "Milkshakes",
-      "Classic ice cream"
+      "Classic breakfast plates",
+      "Pancakes"
     ],
-    "website": "",
-    "menuUrl": "",
+    "website": "https://www.breakfasthousebethany.com",
+    "menuUrl": "https://www.breakfasthousebethany.com/menu",
     "photos": [
-      "/images/placeholder.jpg"
+      "/images/restaurants/the-breakfast-house/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Sunny Bay Café",
+    "slug": "sunny-bay-cafe",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$$",
+    "cuisines": [
+      "Breakfast & Brunch",
+      "breakfast-brunch"
+    ],
+    "vibes": [
+      "Beachy",
+      "Casual"
+    ],
+    "goodFor": [
+      "Lighter fare",
+      "Coffee"
+    ],
+    "shortBlurb": "A bright, beachy café serving creative brunch dishes and smoothies.",
+    "longBlurb": "Sunny Bay Café is a great option when you want something lighter—smoothies, coffee drinks, and creative breakfast plates in a relaxed setting.",
+    "mustTry": [
+      "Smoothies",
+      "Brunch bowls"
+    ],
+    "website": "https://www.sunnybaycafe.com",
+    "menuUrl": "https://www.sunnybaycafe.com/menu",
+    "photos": [
+      "/images/restaurants/sunny-bay-cafe/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Bayard’s Donut Shop",
+    "slug": "bayards-donut-shop",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$",
+    "cuisines": [
+      "Breakfast",
+      "Desserts & Ice Cream",
+      "breakfast-brunch"
+    ],
+    "vibes": [
+      "Iconic",
+      "Quick Stop"
+    ],
+    "goodFor": [
+      "Takeout",
+      "Early mornings"
+    ],
+    "shortBlurb": "An iconic Bethany donut shop with fresh donuts and pastries.",
+    "longBlurb": "Bayard’s is a Bethany Beach classic. Fresh donuts, simple breakfast items, and lines that form early for a reason.",
+    "mustTry": [
+      "Fresh donuts",
+      "Pastries"
+    ],
+    "website": "https://www.bayardsdonutshop.com",
+    "menuUrl": "https://www.bayardsdonutshop.com/menu",
+    "photos": [
+      "/images/restaurants/bayards-donut-shop/1.jpg"
     ],
     "featured": true
+  },
+  {
+    "name": "Fractured Prune",
+    "slug": "fractured-prune",
+    "areaKey": "north-ocean-city",
+    "address": "Ocean City, MD",
+    "price": "$",
+    "cuisines": [
+      "Desserts",
+      "breakfast-brunch",
+      "desserts"
+    ],
+    "vibes": [
+      "Casual",
+      "Kid-Favorite"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Quick treat"
+    ],
+    "shortBlurb": "Made-to-order donuts served hot with endless glaze and topping combos—beach-trip must.",
+    "longBlurb": "Great for sweet breakfasts or late-night treats—fresh, hot donuts customized exactly how you want.",
+    "mustTry": [
+      "Made-to-order donuts"
+    ],
+    "website": "https://fracturedprune.com",
+    "menuUrl": "https://fracturedprune.com/menu",
+    "photos": [
+      "/images/restaurants/fractured-prune/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Ocean View Coffee Company",
+    "slug": "ocean-view-coffee-company",
+    "areaKey": "ocean-view",
+    "address": "Ocean View, DE",
+    "price": "$",
+    "cuisines": [
+      "Breakfast",
+      "Coffee",
+      "breakfast-brunch"
+    ],
+    "vibes": [
+      "Local",
+      "Casual"
+    ],
+    "goodFor": [
+      "Quick breakfast",
+      "Coffee"
+    ],
+    "shortBlurb": "A cozy local coffee shop with breakfast sandwiches and pastries.",
+    "longBlurb": "Ocean View Coffee Company is a reliable stop for good coffee, breakfast sandwiches, and a relaxed local feel before heading to the beach.",
+    "mustTry": [
+      "Breakfast sandwiches",
+      "Coffee drinks"
+    ],
+    "website": "https://www.oceanviewcoffeecompany.com",
+    "menuUrl": "https://www.oceanviewcoffeecompany.com/menu",
+    "photos": [
+      "/images/restaurants/ocean-view-coffee-company/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "The Greene Turtle",
+    "slug": "the-greene-turtle",
+    "areaKey": "north-ocean-city",
+    "address": "11601 Coastal Hwy, Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "American",
+      "Burgers",
+      "breakfast-brunch",
+      "burgers"
+    ],
+    "vibes": [
+      "Sports Bar",
+      "Casual",
+      "Sit-Down"
+    ],
+    "goodFor": [
+      "Groups",
+      "Watching games"
+    ],
+    "shortBlurb": "A reliable sports bar with a strong burger lineup, big portions, and lots of TVs.",
+    "longBlurb": "The Greene Turtle is a dependable move for burgers, beers, and groups—especially if you want to catch a game. Expect a classic sports-bar vibe, plenty of seating, and a menu that works for mixed groups.",
+    "mustTry": [
+      "Burgers",
+      "Wings or shareables",
+      "Beer/cocktails"
+    ],
+    "website": "https://thegreeneturtle.com",
+    "menuUrl": "https://thegreeneturtle.com/menu",
+    "photos": [
+      "/images/restaurants/the-greene-turtle/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Ropewalk",
+    "slug": "ropewalk",
+    "areaKey": "fenwick-island",
+    "address": "38965 W Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "Coastal",
+      "Seafood",
+      "burgers",
+      "coastal",
+      "seafood"
+    ],
+    "vibes": [
+      "Waterfront / View",
+      "Casual"
+    ],
+    "goodFor": [
+      "Large Groups",
+      "Crabs & Steamers"
+    ],
+    "shortBlurb": "Lively bayside seafood spot for steamed crabs, platters, and dockside drinks—great for groups.",
+    "longBlurb": "Ropewalk is a family-and-friends favorite: casual, lively, and built for big tables, steamed crabs, and bayside hangouts.",
+    "mustTry": [
+      "Steamed crabs",
+      "Seafood platters"
+    ],
+    "website": "https://www.ropewalkoc.com",
+    "menuUrl": "https://www.ropewalkoc.com/menu",
+    "photos": [
+      "/images/restaurants/ropewalk/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Crabcake Factory",
+    "slug": "crabcake-factory",
+    "areaKey": "north-ocean-city",
+    "address": "North Ocean City, MD (137th St & Coastal Hwy)",
+    "price": "$$",
+    "cuisines": [
+      "American",
+      "Burgers",
+      "Seafood",
+      "burgers"
+    ],
+    "vibes": [
+      "Casual",
+      "Beach-town"
+    ],
+    "goodFor": [
+      "Groups",
+      "Big portions"
+    ],
+    "shortBlurb": "Big portions, loud beach-town energy, and oversized burgers alongside seafood favorites.",
+    "longBlurb": "Crabcake Factory is known for massive portions and a casual, lively vibe. A good pick when you want a burger that’s over-the-top (and you don’t mind a busy scene).",
+    "mustTry": [
+      "Oversized burgers",
+      "Crab-focused specials"
+    ],
+    "website": "https://www.crabcakefactory.com",
+    "menuUrl": "https://www.crabcakefactory.com/menu",
+    "photos": [
+      "/images/restaurants/crabcake-factory/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Five Guys",
+    "slug": "five-guys-north-oc",
+    "areaKey": "north-ocean-city",
+    "address": "North Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "Burgers",
+      "burgers"
+    ],
+    "vibes": [
+      "Fast-Casual",
+      "Casual"
+    ],
+    "goodFor": [
+      "Takeout",
+      "Kids"
+    ],
+    "shortBlurb": "Made-to-order burgers with endless toppings and fresh fries—dependable and quick.",
+    "longBlurb": "Five Guys is a classic fast-casual burger stop when you want something consistent: burgers done your way, plus fries that travel well back to the beach house.",
+    "mustTry": [
+      "Burgers",
+      "Fries"
+    ],
+    "website": "https://www.fiveguys.com",
+    "menuUrl": "https://www.fiveguys.com/menu",
+    "photos": [
+      "/images/restaurants/five-guys-north-oc/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Smashburger",
+    "slug": "smashburger-north-oc",
+    "areaKey": "north-ocean-city",
+    "address": "North Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "Burgers",
+      "burgers"
+    ],
+    "vibes": [
+      "Fast-Casual",
+      "Casual"
+    ],
+    "goodFor": [
+      "Takeout",
+      "Quick bite"
+    ],
+    "shortBlurb": "Smash-style burgers with crispy edges, plus shakes and sides.",
+    "longBlurb": "Smashburger is a solid alternative when you want something better than standard fast food—smash-style patties, good sides, and shakes if you’re leaning indulgent.",
+    "mustTry": [
+      "Smash burgers",
+      "Shakes"
+    ],
+    "website": "https://smashburger.com",
+    "menuUrl": "https://smashburger.com/menu",
+    "photos": [
+      "/images/restaurants/smashburger-north-oc/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Fenwick Pub",
+    "slug": "fenwick-pub",
+    "areaKey": "fenwick-island",
+    "address": "36840 Coastal Hwy, Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "American",
+      "Burgers",
+      "burgers"
+    ],
+    "vibes": [
+      "Pub",
+      "Casual",
+      "Local"
+    ],
+    "goodFor": [
+      "Beer",
+      "No-frills"
+    ],
+    "shortBlurb": "A true local pub for solid burgers, pub classics, and a relaxed neighborhood feel.",
+    "longBlurb": "Fenwick Pub is a great pick when you want a simple burger and a beer without the touristy feel. It’s laid-back, reliable, and feels like a local staple.",
+    "mustTry": [
+      "Burgers",
+      "Pub classics"
+    ],
+    "website": "https://www.fenwickpub.com",
+    "menuUrl": "https://www.fenwickpub.com/menu",
+    "photos": [
+      "/images/restaurants/fenwick-pub/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Papa Grande Mexican Grill",
+    "slug": "papa-grande-mexican-grill",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "mexican",
+      "Mexican"
+    ],
+    "vibes": [
+      "Casual",
+      "Fast-Casual",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Large Portions"
+    ],
+    "shortBlurb": "Fast-casual Mexican spot with generous portions, bold flavors, and quick service.",
+    "longBlurb": "A solid choice for burritos, tacos, and bowls when you want something filling without a long sit-down meal.",
+    "mustTry": [
+      "Burritos",
+      "Tacos",
+      "Bowls"
+    ],
+    "website": "https://www.papagrandemexicangrill.com",
+    "menuUrl": "https://www.papagrandemexicangrill.com/menu",
+    "photos": [
+      "/images/restaurants/papa-grande-mexican-grill/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Chipotle Mexican Grill",
+    "slug": "chipotle-mexican-grill-fenwick",
+    "areaKey": "fenwick-island",
+    "address": "37058 Coastal Hwy, Fenwick Island, DE",
+    "price": "$",
+    "cuisines": [
+      "mexican",
+      "Mexican"
+    ],
+    "vibes": [
+      "Fast-Casual",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Online Ordering"
+    ],
+    "shortBlurb": "Fast, consistent burritos and bowls—reliable and customizable.",
+    "longBlurb": "Perfect for quick lunches or takeout when you want something consistent and easy to customize.",
+    "mustTry": [
+      "Burrito bowls",
+      "Burritos",
+      "Tacos"
+    ],
+    "website": "https://www.chipotle.com",
+    "menuUrl": "https://www.chipotle.com/menu",
+    "photos": [
+      "/images/restaurants/chipotle-mexican-grill-fenwick/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Grab & Go Taco",
+    "slug": "grab-and-go-taco",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$",
+    "cuisines": [
+      "mexican",
+      "Mexican"
+    ],
+    "vibes": [
+      "Casual",
+      "Beach-Friendly"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Quick Service"
+    ],
+    "shortBlurb": "Quick, flavorful tacos and burritos—ideal for beach days and fast meals.",
+    "longBlurb": "A small, casual taco spot focused on fast service and easy takeout when you don’t want a long wait.",
+    "mustTry": [
+      "Tacos",
+      "Burritos"
+    ],
+    "website": "https://www.grabandgotaco.com",
+    "menuUrl": "https://www.grabandgotaco.com/menu",
+    "photos": [
+      "/images/restaurants/grab-and-go-taco/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Taco Bar",
+    "slug": "taco-bar-north-oc",
+    "areaKey": "north-ocean-city",
+    "address": "Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "mexican",
+      "Mexican"
+    ],
+    "vibes": [
+      "Casual",
+      "Modern"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Small Plates"
+    ],
+    "shortBlurb": "Modern taco spot with creative combos and casual vibes.",
+    "longBlurb": "Great for a quick bite after the beach when you want something more creative than standard tacos.",
+    "mustTry": [
+      "Creative tacos",
+      "Small plates"
+    ],
+    "website": "https://www.tacobaroc.com",
+    "menuUrl": "https://www.tacobaroc.com/menu",
+    "photos": [
+      "/images/restaurants/taco-bar-north-oc/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Pancho & Lefty’s",
+    "slug": "pancho-and-leftys",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$$",
+    "cuisines": [
+      "mexican",
+      "Mexican",
+      "Tex-Mex"
+    ],
+    "vibes": [
+      "Casual",
+      "Beach Town"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Casual"
+    ],
+    "shortBlurb": "Tex-Mex tacos and bowls with a laid-back coastal feel.",
+    "longBlurb": "A solid Bethany option for casual Mexican/Tex-Mex that’s easy, approachable, and good for takeout or a relaxed meal.",
+    "mustTry": [
+      "Tacos",
+      "Burritos",
+      "Bowls"
+    ],
+    "website": "https://panchoandleftys.com",
+    "menuUrl": "https://panchoandleftys.com/menu",
+    "photos": [
+      "/images/restaurants/pancho-and-leftys/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Plaza Tapatia",
+    "slug": "plaza-tapatia",
+    "areaKey": "selbyville",
+    "address": "Selbyville, DE",
+    "price": "$$",
+    "cuisines": [
+      "mexican",
+      "Mexican"
+    ],
+    "vibes": [
+      "Sit-Down",
+      "Local Favorite"
+    ],
+    "goodFor": [
+      "Family-Friendly",
+      "Authentic"
+    ],
+    "shortBlurb": "Authentic Mexican with generous portions and a strong local following.",
+    "longBlurb": "Worth the short inland drive for traditional flavors and a relaxed sit-down vibe.",
+    "mustTry": [
+      "Traditional plates",
+      "House specials"
+    ],
+    "website": "https://plazatapatia.com",
+    "menuUrl": "https://plazatapatia.com/menu",
+    "photos": [
+      "/images/restaurants/plaza-tapatia/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "La Sierra Mexican Restaurant",
+    "slug": "la-sierra-mexican-restaurant",
+    "areaKey": "selbyville",
+    "address": "Selbyville, DE",
+    "price": "$$",
+    "cuisines": [
+      "mexican",
+      "Mexican"
+    ],
+    "vibes": [
+      "Casual",
+      "Sit-Down"
+    ],
+    "goodFor": [
+      "Family-Friendly",
+      "Margaritas"
+    ],
+    "shortBlurb": "Classic Mexican comfort food in a relaxed sit-down atmosphere.",
+    "longBlurb": "Popular for familiar favorites like fajitas and enchiladas—easy dinner option with a casual vibe.",
+    "mustTry": [
+      "Fajitas",
+      "Enchiladas"
+    ],
+    "website": "https://lasierrafamilyrestaurant.com",
+    "menuUrl": "https://lasierrafamilyrestaurant.com/menu",
+    "photos": [
+      "/images/restaurants/la-sierra-mexican-restaurant/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Señor Frog’s",
+    "slug": "senor-frogs-ocean-city",
+    "areaKey": "ocean-city",
+    "address": "114 19th St, Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "mexican",
+      "Mexican",
+      "Tex-Mex"
+    ],
+    "vibes": [
+      "Lively",
+      "Bar & Margaritas"
+    ],
+    "goodFor": [
+      "Groups",
+      "Nightlife"
+    ],
+    "shortBlurb": "More party than traditional—Tex-Mex, margaritas, and high-energy dining.",
+    "longBlurb": "A tourist favorite when you want a loud, fun atmosphere with margaritas and familiar Tex-Mex-style food.",
+    "mustTry": [
+      "Margaritas",
+      "Tex-Mex favorites"
+    ],
+    "website": "https://senorfrogs.com",
+    "menuUrl": "https://senorfrogs.com/menu",
+    "photos": [
+      "/images/restaurants/senor-frogs-ocean-city/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Ocean Side",
+    "slug": "ocean-side",
+    "areaKey": "fenwick-island",
+    "address": "205 Coastal Hwy Unit 2, Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "pizza",
+      "Pizza"
+    ],
+    "vibes": [
+      "Casual",
+      "Family-Friendly",
+      "Beach-Area Classic"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Casual dinner"
+    ],
+    "shortBlurb": "Fenwick staple since the 1980s for classic pizza, subs, and easy beach-town takeout.",
+    "longBlurb": "Ocean Side is reliable, unfussy, and perfect for casual beach dinners or grabbing takeout when you want classic pizza and subs without overthinking it.",
+    "mustTry": [
+      "Classic pies",
+      "Subs"
+    ],
+    "website": "https://www.oceansidefenwickde.com",
+    "menuUrl": "https://www.oceansidefenwickde.com",
+    "photos": [
+      "/images/restaurants/ocean-side/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Surf’s Edge Deli & Pizzeria",
+    "slug": "surfs-edge-deli-and-pizzeria",
+    "areaKey": "fenwick-island",
+    "address": "100 Coastal Hwy, Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "pizza",
+      "Pizza"
+    ],
+    "vibes": [
+      "Casual",
+      "Outdoor Seating"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Lunch"
+    ],
+    "shortBlurb": "Great for slices, full pies, and deli favorites—easy lunch or no-frills dinner in Fenwick.",
+    "longBlurb": "Surf’s Edge is ideal when you want a quick slice, a full pie for the house, or deli staples for beach picnics—simple, fast, and convenient.",
+    "mustTry": [
+      "Slices",
+      "Full pies"
+    ],
+    "website": "https://www.surfsedgefenwick.com",
+    "menuUrl": "https://surfsedgefenwick.com/menu",
+    "photos": [
+      "/images/restaurants/surfs-edge-deli-and-pizzeria/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Mancini’s Brick Oven Pizzeria",
+    "slug": "mancinis-brick-oven-pizzeria",
+    "areaKey": "fenwick-island",
+    "address": "907 Coastal Hwy, Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "pizza",
+      "Pizza",
+      "Italian"
+    ],
+    "vibes": [
+      "Sit-Down",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Groups",
+      "Dinner"
+    ],
+    "shortBlurb": "Brick-oven pizza plus Italian classics—good when the group wants pizza *and* pasta.",
+    "longBlurb": "Mancini’s is a strong option when you want brick-oven pizza, but also need pasta and Italian entrees for mixed cravings at the table.",
+    "mustTry": [
+      "Brick-oven pies",
+      "Italian classics"
+    ],
+    "website": "https://www.mancinisbop.com",
+    "menuUrl": "https://mancinisbop.com/menu",
+    "photos": [
+      "/images/restaurants/mancinis-brick-oven-pizzeria/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "House of Sauce",
+    "slug": "house-of-sauce",
+    "areaKey": "fenwick-island",
+    "address": "300 Coastal Hwy Unit 21, Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "pizza",
+      "Pizza"
+    ],
+    "vibes": [
+      "Casual",
+      "Local Favorite",
+      "Dinner Spot"
+    ],
+    "goodFor": [
+      "Casual dinner",
+      "Comfort food"
+    ],
+    "shortBlurb": "Local favorite for pizza, wings, and bar-style comfort food near the beach.",
+    "longBlurb": "House of Sauce is a relaxed dinner spot for pizza and comfort food—popular for casual nights out and easy beach-town meals.",
+    "mustTry": [
+      "Pizza",
+      "Wings"
+    ],
+    "website": "https://houseofsauce.biz",
+    "menuUrl": "https://houseofsauce.biz",
+    "photos": [
+      "/images/restaurants/house-of-sauce/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Ponzetti’s Pizza",
+    "slug": "ponzettis-pizza",
+    "areaKey": "north-ocean-city",
+    "address": "144th St Coastal Hwy, Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "pizza",
+      "Pizza"
+    ],
+    "vibes": [
+      "Casual",
+      "Sports Bar",
+      "Late-Night",
+      "Sit-Down"
+    ],
+    "goodFor": [
+      "Groups",
+      "Late-night"
+    ],
+    "shortBlurb": "Beach-town pizza + sports bar vibes—big pies, late hours, lively atmosphere.",
+    "longBlurb": "Ponzetti’s is a classic move for a lively sit-down pizza night or late-hour cravings—especially with a group.",
+    "mustTry": [
+      "Big pies"
+    ],
+    "website": "https://www.ponzettispizza.com",
+    "menuUrl": "https://www.ponzettispizza.com",
+    "photos": [
+      "/images/restaurants/ponzettis-pizza/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "4 Brothers Pizza & Grill",
+    "slug": "4-brothers-pizza-and-grill",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$$",
+    "cuisines": [
+      "pizza",
+      "Pizza"
+    ],
+    "vibes": [
+      "Casual",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Delivery",
+      "Families"
+    ],
+    "shortBlurb": "Bethany favorite with a big menu—great for families with mixed cravings.",
+    "longBlurb": "4 Brothers is a reliable Bethany choice when you need pizza plus options for everyone—easy for takeout, delivery, or a casual sit-down.",
+    "mustTry": [
+      "Pizza",
+      "Family combos"
+    ],
+    "website": "https://www.4brotherspizza.com",
+    "menuUrl": "https://www.4brotherspizza.com/menu",
+    "photos": [
+      "/images/restaurants/4-brothers-pizza-and-grill/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Delizia’s Pizza",
+    "slug": "delizias-pizza",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$$",
+    "cuisines": [
+      "pizza",
+      "Pizza"
+    ],
+    "vibes": [
+      "Casual",
+      "Local Favorite",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Casual"
+    ],
+    "shortBlurb": "Well-reviewed for quality ingredients and consistently good pies.",
+    "longBlurb": "Delizia’s is a strong option for both takeout and casual dine-in when you want a reliably good pie with quality ingredients.",
+    "mustTry": [
+      "Classic pies"
+    ],
+    "website": "https://www.deliziaspizza.com",
+    "menuUrl": "https://www.deliziaspizza.com/menu",
+    "photos": [
+      "/images/restaurants/delizias-pizza/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Luca’s Pizza",
+    "slug": "lucas-pizza",
+    "areaKey": "selbyville",
+    "address": "37031 Old Mill Bridge Rd, Selbyville, DE",
+    "price": "$$",
+    "cuisines": [
+      "pizza",
+      "Pizza"
+    ],
+    "vibes": [
+      "Casual",
+      "Local Favorite",
+      "Inland Option"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Quick dinner"
+    ],
+    "shortBlurb": "Longtime inland favorite for thin-crust pizza and classic subs—worth the short drive.",
+    "longBlurb": "Luca’s is a dependable inland option when you want thin-crust pizza and subs and don’t mind a short drive from the beach towns.",
+    "mustTry": [
+      "Thin-crust pies",
+      "Subs"
+    ],
+    "website": "https://www.lucaspizzade.com",
+    "menuUrl": "https://www.lucaspizzade.com/menu",
+    "photos": [
+      "/images/restaurants/lucas-pizza/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Our Harvest",
+    "slug": "our-harvest",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "seafood",
+      "Seafood",
+      "coastal",
+      "Coastal"
+    ],
+    "vibes": [
+      "Casual Sit-Down",
+      "Dinner Spot"
+    ],
+    "goodFor": [
+      "Local Ingredients",
+      "Seafood-focused"
+    ],
+    "shortBlurb": "Modern seafood + farm-to-table with fresh, local ingredients in a relaxed coastal setting.",
+    "longBlurb": "A higher-quality seafood option that leans fresh and local—great when you want something a bit more modern but still easygoing.",
+    "mustTry": [
+      "Seasonal seafood plates"
+    ],
+    "website": "https://www.ourharvestfenwick.com",
+    "menuUrl": "https://www.ourharvestfenwick.com/menu",
+    "photos": [
+      "/images/restaurants/our-harvest/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "One Coastal",
+    "slug": "one-coastal",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$$$",
+    "cuisines": [
+      "seafood",
+      "Seafood",
+      "coastal",
+      "Coastal"
+    ],
+    "vibes": [
+      "Upscale",
+      "Date Night"
+    ],
+    "goodFor": [
+      "Craft Cocktails",
+      "Reservations Recommended"
+    ],
+    "shortBlurb": "Upscale coastal dining with refined seafood and craft cocktails—ideal for special dinners.",
+    "longBlurb": "One Coastal is the move for a date night or celebration: elevated seafood-forward dishes, an intimate vibe, and strong cocktails.",
+    "mustTry": [
+      "Seafood-forward specials",
+      "Craft cocktails"
+    ],
+    "website": "https://www.onecoastal.com",
+    "menuUrl": "https://www.onecoastal.com/menu",
+    "photos": [
+      "/images/restaurants/one-coastal/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Off the Hook",
+    "slug": "off-the-hook",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$$$",
+    "cuisines": [
+      "seafood",
+      "Seafood",
+      "coastal",
+      "Coastal"
+    ],
+    "vibes": [
+      "Upscale",
+      "Date Night"
+    ],
+    "goodFor": [
+      "Reservations Recommended",
+      "Seafood-focused"
+    ],
+    "shortBlurb": "One of Bethany’s top-rated seafood spots—elevated dishes with seasonal menus and thoughtful presentation.",
+    "longBlurb": "Off the Hook is a consistent standout for elevated seafood in Bethany—great for date nights or when you want a nicer meal.",
+    "mustTry": [
+      "Seasonal seafood specials"
+    ],
+    "website": "https://www.offthehookbethany.com",
+    "menuUrl": "https://www.offthehookbethany.com/menu",
+    "photos": [
+      "/images/restaurants/off-the-hook/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Crab Bag",
+    "slug": "crab-bag",
+    "areaKey": "north-ocean-city",
+    "address": "138th St Coastal Hwy, Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "seafood",
+      "Seafood",
+      "coastal",
+      "Coastal"
+    ],
+    "vibes": [
+      "Casual",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Maryland Crabs",
+      "Seasonal Favorite"
+    ],
+    "shortBlurb": "North OC institution for steamed crabs, crab cakes, and classic Maryland seafood.",
+    "longBlurb": "A no-frills, very Maryland kind of seafood stop—popular in season for steamed crabs and classic favorites.",
+    "mustTry": [
+      "Steamed crabs",
+      "Crab cakes"
+    ],
+    "website": "https://www.crabbag.com",
+    "menuUrl": "https://www.crabbag.com/menu",
+    "photos": [
+      "/images/restaurants/crab-bag/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Higgins Crab House",
+    "slug": "higgins-crab-house",
+    "areaKey": "north-ocean-city",
+    "address": "128th St Coastal Hwy, Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "seafood",
+      "Seafood",
+      "coastal",
+      "Coastal"
+    ],
+    "vibes": [
+      "Casual",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "All-You-Can-Eat",
+      "Groups"
+    ],
+    "shortBlurb": "All-you-can-eat seafood and steamed crabs with classic Ocean City family vibes.",
+    "longBlurb": "Built for big appetites and family dinners—go hungry if you’re doing AYCE.",
+    "mustTry": [
+      "All-you-can-eat seafood",
+      "Steamed crabs"
+    ],
+    "website": "https://www.higginscrabhouse.com",
+    "menuUrl": "https://www.higginscrabhouse.com/menu",
+    "photos": [
+      "/images/restaurants/higgins-crab-house/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Matt’s Fish Camp",
+    "slug": "matts-fish-camp",
+    "areaKey": "fenwick-island",
+    "address": "37108 Coastal Hwy, Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "seafood",
+      "Seafood",
+      "coastal",
+      "Coastal"
+    ],
+    "vibes": [
+      "Lively",
+      "Casual Sit-Down"
+    ],
+    "goodFor": [
+      "Weekend Brunch",
+      "Cocktails",
+      "Groups"
+    ],
+    "shortBlurb": "Popular coastal spot with a seafood twist, cocktails, and a lively brunch-and-dinner vibe.",
+    "longBlurb": "A great pick when you want seafood-inspired dishes and cocktails in a fun, upbeat setting—especially on weekends.",
+    "mustTry": [
+      "Seafood-forward specials",
+      "Brunch"
+    ],
+    "website": "https://www.mattsfishcamp.com",
+    "menuUrl": "https://www.mattsfishcamp.com/menu",
+    "photos": [
+      "/images/restaurants/matts-fish-camp/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Catch 54",
+    "slug": "catch-54",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$$$",
+    "cuisines": [
+      "seafood",
+      "Seafood",
+      "coastal",
+      "Coastal"
+    ],
+    "vibes": [
+      "Waterfront / View",
+      "Upscale Casual"
+    ],
+    "goodFor": [
+      "Sunset Views",
+      "Date Night"
+    ],
+    "shortBlurb": "Refined waterfront seafood with excellent sunset views—ideal for special dinners.",
+    "longBlurb": "Catch 54 overlooks Assawoman Bay and is known for seasonal seafood, creative presentations, and sunset views that make it a go-to for date nights.",
+    "mustTry": [
+      "Seasonal seafood plates",
+      "Sunset seating"
+    ],
+    "website": "https://www.catch54.com",
+    "menuUrl": "https://www.catch54.com/menu",
+    "photos": [
+      "/images/restaurants/catch-54/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Blue Fish",
+    "slug": "blue-fish",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$$",
+    "cuisines": [
+      "sushi",
+      "Sushi",
+      "asian",
+      "Asian",
+      "sushi-asian"
+    ],
+    "vibes": [
+      "Sit-Down",
+      "Date Night",
+      "Cocktails"
+    ],
+    "goodFor": [
+      "Sushi night",
+      "Groups"
+    ],
+    "shortBlurb": "Modern sushi + pan-Asian with creative rolls and a polished but approachable vibe.",
+    "longBlurb": "A strong sushi-night option close to the beach—creative rolls, pan-Asian plates, and a comfortable sit-down atmosphere.",
+    "mustTry": [
+      "Specialty rolls",
+      "Chef specials"
+    ],
+    "website": "https://www.bluefishfenwick.com",
+    "menuUrl": "https://www.bluefishfenwick.com/menu",
+    "photos": [
+      "/images/restaurants/blue-fish/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Japan 7",
+    "slug": "japan-7",
+    "areaKey": "north-ocean-city",
+    "address": "Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "sushi",
+      "Sushi",
+      "asian",
+      "Asian",
+      "sushi-asian"
+    ],
+    "vibes": [
+      "Sit-Down",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Groups",
+      "Hibachi"
+    ],
+    "shortBlurb": "Popular North OC spot for sushi and hibachi with generous portions and consistent quality.",
+    "longBlurb": "A reliable choice for mixed sushi/hibachi cravings—works well for families and groups.",
+    "mustTry": [
+      "Sushi rolls",
+      "Hibachi dinners"
+    ],
+    "website": "https://www.japan7ocmd.com",
+    "menuUrl": "https://www.japan7ocmd.com/menu",
+    "photos": [
+      "/images/restaurants/japan-7/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Hokkaido Sushi & Hibachi",
+    "slug": "hokkaido-sushi-and-hibachi",
+    "areaKey": "north-ocean-city",
+    "address": "Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "sushi",
+      "Sushi",
+      "asian",
+      "Asian",
+      "sushi-asian"
+    ],
+    "vibes": [
+      "Casual",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Hibachi"
+    ],
+    "shortBlurb": "Go-to for sushi rolls, hibachi dinners, and bento boxes—reliable for families and takeout.",
+    "longBlurb": "Great when your group is split between sushi and hibachi—easy, casual, and dependable.",
+    "mustTry": [
+      "Sushi rolls",
+      "Hibachi",
+      "Bento boxes"
+    ],
+    "website": "https://www.hokkaidoocmd.com",
+    "menuUrl": "https://www.hokkaidoocmd.com/menu",
+    "photos": [
+      "/images/restaurants/hokkaido-sushi-and-hibachi/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "China Chef",
+    "slug": "china-chef",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$",
+    "cuisines": [
+      "asian",
+      "Asian",
+      "chinese",
+      "Chinese",
+      "Sushi",
+      "sushi-asian"
+    ],
+    "vibes": [
+      "Casual"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Quick meal"
+    ],
+    "shortBlurb": "Classic Chinese takeout with familiar favorites—fast, no-frills, dependable near Fenwick.",
+    "longBlurb": "A go-to when you want quick Chinese takeout without thinking too hard—solid staples and easy pickup.",
+    "mustTry": [
+      "Takeout favorites"
+    ],
+    "website": "https://www.chinacheffenwick.com",
+    "menuUrl": "https://www.chinacheffenwick.com/menu",
+    "photos": [
+      "/images/restaurants/china-chef/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Suki Hana",
+    "slug": "suki-hana",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$$",
+    "cuisines": [
+      "sushi",
+      "Sushi",
+      "asian",
+      "Asian",
+      "japanese",
+      "Japanese",
+      "sushi-asian"
+    ],
+    "vibes": [
+      "Casual",
+      "Family-Friendly"
+    ],
+    "goodFor": [
+      "Boardwalk area",
+      "Casual dinner"
+    ],
+    "shortBlurb": "Bethany option for sushi, teriyaki, and Japanese comfort dishes—easy and casual.",
+    "longBlurb": "A solid pick for casual Japanese and sushi close to the boardwalk—good for families and easy dinners.",
+    "mustTry": [
+      "Sushi rolls",
+      "Teriyaki"
+    ],
+    "website": "https://www.sukihanabethany.com",
+    "menuUrl": "https://www.sukihanabethany.com/menu",
+    "photos": [
+      "/images/restaurants/suki-hana/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Thai Ocha",
+    "slug": "thai-ocha",
+    "areaKey": "ocean-view",
+    "address": "Ocean View, DE",
+    "price": "$$",
+    "cuisines": [
+      "asian",
+      "Asian",
+      "thai",
+      "Thai",
+      "Sushi",
+      "sushi-asian"
+    ],
+    "vibes": [
+      "Sit-Down",
+      "Local Favorite"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Authentic flavors"
+    ],
+    "shortBlurb": "Well-reviewed Thai spot for curries, noodles, and stir-fries—worth the short drive inland.",
+    "longBlurb": "A great inland option when you’re craving Thai—curries, noodles, and classic stir-fries done well.",
+    "mustTry": [
+      "Curries",
+      "Noodles"
+    ],
+    "website": "https://www.thaiochade.com",
+    "menuUrl": "https://www.thaiochade.com/menu",
+    "photos": [
+      "/images/restaurants/thai-ocha/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "Asian Bistro",
+    "slug": "asian-bistro",
+    "areaKey": "selbyville",
+    "address": "Selbyville, DE",
+    "price": "$$",
+    "cuisines": [
+      "asian",
+      "Asian",
+      "sushi",
+      "Sushi",
+      "sushi-asian"
+    ],
+    "vibes": [
+      "Casual"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Varied preferences"
+    ],
+    "shortBlurb": "Mixed Asian menu with Chinese, Japanese, and sushi—good all-around pick for varied tastes.",
+    "longBlurb": "A flexible choice when your group has mixed cravings—enough range to keep everyone happy.",
+    "mustTry": [
+      "Sushi (if you’re in the mood)",
+      "House favorites"
+    ],
+    "website": "https://www.asianbistroselbyville.com",
+    "menuUrl": "https://www.asianbistroselbyville.com/menu",
+    "photos": [
+      "/images/restaurants/asian-bistro/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "OC Wasabi",
+    "slug": "oc-wasabi",
+    "areaKey": "north-ocean-city",
+    "address": "Ocean City, MD",
+    "price": "$$",
+    "cuisines": [
+      "sushi",
+      "Sushi",
+      "asian",
+      "Asian",
+      "japanese",
+      "Japanese",
+      "sushi-asian"
+    ],
+    "vibes": [
+      "Sit-Down",
+      "Local Favorite"
+    ],
+    "goodFor": [
+      "Take-Out",
+      "Sushi night"
+    ],
+    "shortBlurb": "Popular North OC sushi spot for creative specialty rolls and consistent quality.",
+    "longBlurb": "A strong choice when you want sushi without heading deep into Ocean City—relaxed vibe, good rolls, reliable quality.",
+    "mustTry": [
+      "Specialty rolls"
+    ],
+    "website": "https://www.ocwasabi.com",
+    "menuUrl": "https://www.ocwasabi.com/menu",
+    "photos": [
+      "/images/restaurants/oc-wasabi/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Candy Kitchen",
+    "slug": "candy-kitchen",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$",
+    "cuisines": [
+      "desserts",
+      "Desserts"
+    ],
+    "vibes": [
+      "Classic",
+      "Family-Friendly",
+      "Walk-Up Friendly"
+    ],
+    "goodFor": [
+      "Ice cream stop",
+      "Families"
+    ],
+    "shortBlurb": "Classic coastal dessert stop for homemade ice cream, milkshakes, and old-school soda fountain vibes.",
+    "longBlurb": "A Fenwick tradition—perfect for families who want ice cream, shakes, sundaes, and that nostalgic dessert-shop feel.",
+    "mustTry": [
+      "Ice cream",
+      "Milkshakes",
+      "Sundaes"
+    ],
+    "website": "https://www.candykitchen.com",
+    "menuUrl": "https://www.candykitchen.com/menu",
+    "photos": [
+      "/images/restaurants/candy-kitchen/1.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "name": "Fisher’s Popcorn",
+    "slug": "fishers-popcorn",
+    "areaKey": "fenwick-island",
+    "address": "Fenwick Island, DE",
+    "price": "$",
+    "cuisines": [
+      "desserts",
+      "Desserts"
+    ],
+    "vibes": [
+      "Beach Classic",
+      "Grab-and-Go"
+    ],
+    "goodFor": [
+      "Snack",
+      "Souvenir"
+    ],
+    "shortBlurb": "Fresh-popped caramel popcorn and savory flavors that scream beach vacation—easy grab-and-go.",
+    "longBlurb": "Perfect as a quick dessert, a boardwalk snack, or something to bring back to the house—sweet and savory flavors for everyone.",
+    "mustTry": [
+      "Caramel popcorn",
+      "Mixes"
+    ],
+    "website": "https://www.fishers-popcorn.com",
+    "menuUrl": "https://www.fishers-popcorn.com/flavors",
+    "photos": [
+      "/images/restaurants/fishers-popcorn/1.jpg"
+    ],
+    "featured": false
+  },
+  {
+    "name": "TC Scoops",
+    "slug": "tc-scoops",
+    "areaKey": "bethany-beach",
+    "address": "Bethany Beach, DE",
+    "price": "$",
+    "cuisines": [
+      "desserts",
+      "Desserts"
+    ],
+    "vibes": [
+      "Family-Friendly",
+      "Boardwalk Area",
+      "Seasonal"
+    ],
+    "goodFor": [
+      "After dinner",
+      "Families"
+    ],
+    "shortBlurb": "Bethany favorite for ice cream and sundaes just steps from the boardwalk—great after dinner.",
+    "longBlurb": "Easy Bethany dessert stop when you want ice cream near the boardwalk—perfect for a simple walk-up treat after dinner.",
+    "mustTry": [
+      "Sundaes",
+      "Cones"
+    ],
+    "website": "https://www.tcscoops.com",
+    "menuUrl": "https://www.tcscoops.com/menu",
+    "photos": [
+      "/images/restaurants/tc-scoops/1.jpg"
+    ],
+    "featured": false
   }
 ]

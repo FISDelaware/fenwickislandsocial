@@ -5,74 +5,83 @@ import CollectionGrid from "../components/CollectionGrid.astro";
 import RestaurantCard from "../components/RestaurantCard.astro";
 
 import areas from "../data/areas.json";
+import cuisines from "../data/cuisines.json";
+import collections from "../data/collections.json";
 import restaurants from "../data/restaurants.json";
 
-const featured = restaurants.filter(r => r.featured).slice(0, 9);
-const areaName = (key) => areas.find(a => a.key === key)?.name ?? key;
+const areaName = (key) => areas.find((a) => a.key === key)?.name ?? key;
+
+const featured = (Array.isArray(restaurants) ? restaurants : [])
+  .filter((r) => r && typeof r === "object" && r.featured)
+  .slice(0, 6);
 ---
-<Base title="Fenwick Island Social — Curated Food Guide" description="A curated food guide for Fenwick Island, Bethany Beach & Ocean City.">
-  <section class="section">
-    <div class="hero heroBg">
-      <div class="kicker">Curated Food Guide</div>
-      <h1 class="h1">Find the best food near Fenwick, Bethany & Ocean City.</h1>
-      <p class="p">Curated restaurant picks with photos, menus, and quick takes on where to eat near the beach. No reviews, no noise — just solid choices.</p>
-      <div class="btnRow">
-        <a class="btn primary" href="/restaurants">Browse Restaurants</a>
-        <a class="btn" href="/food/pizza">Browse by Food</a>
-        <a class="btn" href="/areas/fenwick-island">Browse by Area</a>
-      </div>
-    </div>
-  </section>
 
+<Base
+  title="Fenwick Island Social"
+  description="Curated food guide for Fenwick Island, Bethany Beach & Ocean City."
+>
   <section class="section">
-    <h2 class="h2">Start with what you’re craving</h2>
-    <CuisineTiles />
-  </section>
+    <div class="kicker">Curated food guide</div>
+    <h1 class="h1" style="margin-bottom:10px;">
+      Find the best food near Fenwick, Bethany & Ocean City.
+    </h1>
+    <p class="p" style="max-width: 68ch;">
+      Curated restaurant picks with photos, menus, and quick takes on where to eat near the beach.
+      No reviews—just solid go-to choices.
+    </p>
 
-  <section class="section">
-    <h2 class="h2">Editor picks</h2>
-    <CollectionGrid />
-  </section>
-
-  <section class="section">
-    <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap;">
-      <h2 class="h2" style="margin:0;">Featured restaurants</h2>
-      <a class="small" href="/restaurants" style="font-weight:700; color:var(--accent);">See all →</a>
-    </div>
     <div style="height:12px;"></div>
+
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <a class="btn" href="/restaurants">Browse Restaurants</a>
+      <a class="btn" href="/food">Browse by Food</a>
+      <a class="btn" href="/areas">Browse by Area</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="h2" style="margin-bottom:10px;">Start with what you’re craving</h2>
+    <CuisineTiles cuisines={cuisines} />
+  </section>
+
+  <section class="section">
+    <h2 class="h2" style="margin-bottom:10px;">Editor picks</h2>
+    <CollectionGrid collections={collections} />
+  </section>
+
+  <section class="section">
+    <div style="display:flex; align-items:baseline; justify-content:space-between; gap:12px;">
+      <h2 class="h2" style="margin:0;">Featured restaurants</h2>
+      <a class="small" style="font-weight:800;" href="/restaurants">See all →</a>
+    </div>
+
+    <div style="height:12px;"></div>
+
     <div class="rgrid">
       {featured.map((r) => <RestaurantCard r={r} areaName={areaName(r.areaKey)} />)}
     </div>
+
+    {featured.length === 0 && (
+      <div class="card" style="padding:16px;">
+        <div class="h2">No featured picks yet</div>
+        <p class="small">Mark restaurants as featured in <code>src/data/restaurants.json</code>.</p>
+      </div>
+    )}
   </section>
 
-  <section class="section">
-    <h2 class="h2">Browse by area</h2>
-    <div class="cols3">
-      {areas.map((a) => (
-        <a class="card" href={`/areas/${a.key}`} style="padding:16px;">
-          <div class="kicker">Area</div>
-          <div class="h2" style="margin-top:6px; margin-bottom:6px;">{a.name}</div>
-          <p class="small">Curated picks and easy browsing for {a.name}.</p>
-          <div style="margin-top:10px; font-weight:700; color:var(--accent);">Explore →</div>
-        </a>
-      ))}
-    </div>
-  </section>
+  <style>
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:#fff;
+      color:var(--text);
+      font-weight:800;
+      text-decoration:none;
+    }
+    .btn:hover{ opacity:.9; }
+  </style>
 </Base>
----
-
----
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>

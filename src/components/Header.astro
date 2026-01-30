@@ -1,26 +1,71 @@
----
-const nav = [
-  { href: "/food/pizza", label: "Food" },
-  { href: "/areas/fenwick-island", label: "Areas" },
-  { href: "/restaurants", label: "Restaurants" },
-  { href: "/about", label: "About" }
-];
----
-<header class="container" style="padding:18px 18px 10px;">
-  <div style="display:flex; align-items:center; justify-content:space-between; gap:14px;">
-    <a href="/" style="display:flex; align-items:baseline; gap:10px;">
-      <div style="font-family: ui-serif, Georgia, serif; font-weight:800; font-size:1.15rem; color:var(--navy);">
-        Fenwick Island Social
-      </div>
-    </a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo">Fenwick Island Social</a>
 
-    <nav style="display:flex; gap:14px; flex-wrap:wrap;">
-      {nav.map((n) => (
-        <a href={n.href} class="small" style="padding:8px 10px; border-radius:999px; border:1px solid var(--border); background:rgba(255,255,255,.65);">
-          {n.label}
-        </a>
-      ))}
+    <nav class="nav">
+      <a href="/food">Food</a>
+      <a href="/areas">Areas</a>
+      <a href="/restaurants">Restaurants</a>
+      <a href="/contact">Contact</a>
+
+      <a href="/submit" class="submit-btn">Submit a Restaurant</a>
     </nav>
   </div>
 </header>
 
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    background: #fff;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+
+  .logo {
+    font-weight: 800;
+    font-size: 1.05rem;
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .submit-btn {
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff !important;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .submit-btn:hover {
+    opacity: 0.9;
+  }
+
+  @media (max-width: 720px) {
+    .nav {
+      gap: 12px;
+    }
+
+    .submit-btn {
+      padding: 8px 12px;
+    }
+  }
+</style>

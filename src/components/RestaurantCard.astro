@@ -1,26 +1,62 @@
 ---
-import TagPills from "./TagPills.astro";
-const { r, areaName } = Astro.props;
-const photo = (r.photos && r.photos[0]) ? r.photos[0] : "/images/placeholder.jpg";
-const tags = [...(r.cuisines || []).slice(0,2), ...(r.vibes || []).slice(0,1)];
+const r = Astro.props?.r ?? Astro.props?.restaurant ?? null;
+const areaName = Astro.props?.areaName ?? "";
+
+const photo =
+  (r && Array.isArray(r.photos) && r.photos.length > 0 && r.photos[0])
+    ? r.photos[0]
+    : "/images/placeholder.jpg";
+
+const cuisines = (r && Array.isArray(r.cuisines)) ? r.cuisines : [];
+const vibes = (r && Array.isArray(r.vibes)) ? r.vibes : [];
+
+const tags = [
+  ...cuisines.slice(0, 2),
+  ...vibes.slice(0, 1),
+].filter(Boolean);
 ---
-<article class="card">
-  <a href={`/restaurants/${r.slug}`}>
-    <img src={photo} alt={`${r.name} photo`} style="height:190px; width:100%; object-fit:cover;" loading="lazy" />
-    <div style="padding:14px 14px 16px;">
-      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:10px;">
-        <div>
-          <div style="font-weight:800; color:var(--navy);">{r.name}</div>
-          <div class="small">{areaName}</div>
+
+{r ? (
+  <article class="card rc">
+    <a class="rc-link" href={`/restaurants/${r.slug}`} aria-label={`${r.name} details`}>
+      <img class="rc-img" src={photo} alt={`${r.name} photo`} loading="lazy" />
+      <div class="rc-body">
+        <div class="rc-top">
+          <div>
+            <div class="rc-name">{r.name}</div>
+            <div class="small" style="opacity:.8;">{areaName}</div>
+          </div>
+          <div class="small" style="font-weight:800; opacity:.8;">View →</div>
         </div>
-        <div class="pill" style="border-style:dashed;">{r.price}</div>
+
+        {tags.length > 0 && (
+          <div class="rc-tags">
+            {tags.slice(0, 3).map((t) => (
+              <span class="pill">{t}</span>
+            ))}
+          </div>
+        )}
       </div>
+    </a>
+  </article>
+) : null}
 
-      <TagPills tags={tags} />
-      <p class="small" style="margin-top:10px; line-height:1.45;">{r.shortBlurb}</p>
-
-      <div style="margin-top:10px; font-weight:700; color:var(--accent);">View details →</div>
-    </div>
-  </a>
-</article>
-
+<style>
+  .rc { overflow: hidden; padding: 0; }
+  .rc-link { display:block; text-decoration:none; color:inherit; }
+  .rc-img { width:100%; height:190px; object-fit:cover; display:block; }
+  .rc-body { padding:14px 14px 16px; }
+  .rc-top { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
+  .rc-name { font-weight:800; color:var(--navy); }
+  .rc-tags { margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; }
+  .pill {
+    display:inline-block;
+    padding: 4px 9px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,.7);
+    font-size: .78rem;
+    font-weight: 700;
+    opacity: .9;
+  }
+</style>

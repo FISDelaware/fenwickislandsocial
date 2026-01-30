@@ -1,11 +1,89 @@
 ---
 import Base from "../layouts/Base.astro";
+
+const email = "fenwickislandsocialcontact@gmail.com";
 ---
-<Base title="Submit — Fenwick Island Social">
+<Base
+  title="Submit a Restaurant — Fenwick Island Social"
+  description="Submit a restaurant suggestion to Fenwick Island Social."
+>
   <section class="section">
     <div class="kicker">Submit</div>
     <h1 class="h1">Submit a restaurant</h1>
-    <p class="p">Phase 1 is curated. Soon, this page can become a simple submission form (Cloudflare Worker + D1/KV).</p>
-  </section>
-</Base>
+    <p class="p">
+      Know a spot that should be on the guide? Send it here. We review every submission.
+    </p>
 
+    <div class="card" style="padding:16px; margin-top:14px;">
+      <form action={`https://formsubmit.co/${email}`} method="POST" class="form">
+        <input type="hidden" name="_subject" value="Fenwick Island Social — Restaurant Submission" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://www.fenwickislandsocial.com/thanks" />
+
+        <label>
+          <div class="small" style="font-weight:800; margin-bottom:6px;">Restaurant name</div>
+          <input type="text" name="Name" placeholder="Example: Harpoon Hanna’s" required />
+        </label>
+
+        <label>
+          <div class="small" style="font-weight:800; margin-bottom:6px;">Why go?</div>
+          <textarea
+            name="Why Go"
+            rows="5"
+            placeholder="What makes it worth recommending? (vibe, must-try, best time to go)"
+            required
+          ></textarea>
+        </label>
+
+        <label>
+          <div class="small" style="font-weight:800; margin-bottom:6px;">Quick links</div>
+          <textarea name="Quick Links" rows="3" placeholder="Website, menu, Google Maps link"></textarea>
+        </label>
+
+        <label>
+          <div class="small" style="font-weight:800; margin-bottom:6px;">Category</div>
+          <select name="Category" required>
+            <option value="" disabled selected>Select one…</option>
+            <option>Pizza</option>
+            <option>Seafood</option>
+            <option>BBQ</option>
+            <option>Breakfast & Brunch</option>
+            <option>Italian</option>
+            <option>Burgers</option>
+            <option>Tacos / Mexican</option>
+            <option>Sushi</option>
+            <option>Dessert / Ice Cream</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <div style="height:12px;"></div>
+
+        <button class="btn primary" type="submit">Send submission</button>
+
+        <p class="small" style="margin-top:10px; opacity:.9;">
+          This sends directly to <strong>{email}</strong>.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <style>
+    .form { display: grid; gap: 12px; }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-size: 16px;
+      background: #fff;
+      color: var(--text);
+      outline: none;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: rgba(47, 122, 118, 0.55);
+      box-shadow: 0 0 0 3px rgba(47, 122, 118, 0.12);
+    }
+  </style>
+</Base>

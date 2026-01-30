@@ -5,23 +5,25 @@ import Footer from "../components/Footer.astro";
 import NoticeBar from "../components/NoticeBar.astro";
 
 const {
-  title = "Fenwick Island Social",
-  description = "A curated food guide for Fenwick Island, Bethany Beach & Ocean City."
+  title: pageTitle = "Fenwick Island Social",
+  description: pageDescription = "Curated food guide for Fenwick, Bethany & Ocean City.",
 } = Astro.props;
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={description} />
-    <title>{title}</title>
+    <meta name="description" content={pageDescription} />
+    <title>{pageTitle}</title>
+    <meta name="theme-color" content="#0b2a3a" />
   </head>
 
   <body>
     <Header />
 
-    <main class="container">
+    <main class="wrap">
       <NoticeBar />
       <slot />
     </main>

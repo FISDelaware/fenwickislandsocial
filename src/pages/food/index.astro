@@ -1,0 +1,15 @@
+---
+import Base from "../../layouts/Base.astro";
+import CuisineTiles from "../../components/CuisineTiles.astro";
+import cuisines from "../../data/cuisines.json";
+---
+<Base title="Food — Fenwick Island Social" description="Browse restaurants by food type across Fenwick Island, Bethany Beach & Ocean City.">
+  <section class="section">
+    <div class="kicker">Food</div>
+    <h1 class="h1">Browse by food type</h1>
+    <p class="p">Pick a category to see curated spots. No noise—just reliable choices.</p>
+
+    <div style="height:14px;"></div>
+    <CuisineTiles cuisines={cuisines} />
+  </section>
+</Base>
